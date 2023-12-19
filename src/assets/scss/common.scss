@@ -1,0 +1,24 @@
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.text {
+  color: #252525;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+input,
+.v-input {
+  box-sizing: border-box;
+}
+
+.manager-container {
+  // .manager-container__container
+  &__container {
+    display: grid;
+    gap: 1.875rem 0;
+  }
+}

@@ -1,0 +1,28 @@
+@import './reset';
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  > main {
+    flex: 1 1 auto;
+  }
+  > * {
+    min-width: 0;
+  }
+}
+
+[class*='__container'] {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1150px;
+  box-sizing: content-box;
+}
+
+main {
+  padding-top: 7.5rem;
+}
+
+@import './header';
+@import './common';

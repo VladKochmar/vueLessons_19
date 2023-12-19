@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  padding: 1.875rem;
+  background-color: #23272e;
+  // .header__container
+  &__container {
+  }
+  // .header__menu
+  &__menu {
+    display: flex;
+    gap: 0 1.25rem;
+    color: #f5f5f5;
+    .router-link-exact-active {
+      color: #1abc9c;
+    }
+    & > * {
+      transition: color 0.3s ease 0s;
+      @media (any-hover: hover) {
+        &:hover {
+          color: #1abc9c;
+        }
+      }
+    }
+  }
+}
